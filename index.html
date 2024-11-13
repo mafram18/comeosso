@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AluraBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Camisetas</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Malha premium</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Infraestrutura</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Blusas</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Design</a>
+        </li>
+      </ul>
+      <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nossa loja o que precisa para seu armário!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima compra?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="https://static.wixstatic.com/media/439c77_c3da45855da949889c7a7e3c88e178ef~mv2.jpg/v1/fill/w_520,h_552,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/439c77_c3da45855da949889c7a7e3c88e178ef~mv2.jpg"
+            alt="blusa preta"></div>
+        <div class="swiper-slide"><img src="https://static.wixstatic.com/media/439c77_1a4238ad24684f648c006b2d452c18b2~mv2.jpg/v1/fill/w_626,h_634,al_c,q_85,usm_0.66_1.00_0.01/439c77_1a4238ad24684f648c006b2d452c18b2~mv2.jpg"
+            alt="camiseta eat bone"></div>
+        <div class="swiper-slide"><img src="https://static.wixstatic.com/media/439c77_a8c7f055733943ae955442b0f5483baf~mv2.jpg/v1/fill/w_520,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/439c77_a8c7f055733943ae955442b0f5483baf~mv2.jpg" alt="blusa azul">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://static.wixstatic.com/media/439c77_bee572c8441847cab426dfca6618dd00~mv2.jpg/v1/fill/w_622,h_634,al_c,q_85,usm_0.66_1.00_0.01/439c77_bee572c8441847cab426dfca6618dd00~mv2.jpg" alt="Camiseta Eatbone" />
+        </div>
+      
+     
+    
+
+      
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+          <h2 class="descrição__titulo-livro">Lançamentos</h2>
+          <p class="descrição__texto">
+            Sugerindo estampas para a nossa loja.
+          </p>
+        </div>
+        <img src="img/Angular.svg" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="https://static.wixstatic.com/media/439c77_c3da45855da949889c7a7e3c88e178ef~mv2.jpg/v1/fill/w_520,h_552,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/439c77_c3da45855da949889c7a7e3c88e178ef~mv2.jpg"
+          alt="blusa preta"></div>
+      <div class="swiper-slide"><img src="https://static.wixstatic.com/media/439c77_1a4238ad24684f648c006b2d452c18b2~mv2.jpg/v1/fill/w_626,h_634,al_c,q_85,usm_0.66_1.00_0.01/439c77_1a4238ad24684f648c006b2d452c18b2~mv2.jpg"
+          alt="camiseta eat bone"></div>
+      <div class="swiper-slide"><img src="https://static.wixstatic.com/media/439c77_a8c7f055733943ae955442b0f5483baf~mv2.jpg/v1/fill/w_520,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/439c77_a8c7f055733943ae955442b0f5483baf~mv2.jpg" alt="blusa azul">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://static.wixstatic.com/media/439c77_bee572c8441847cab426dfca6618dd00~mv2.jpg/v1/fill/w_622,h_634,al_c,q_85,usm_0.66_1.00_0.01/439c77_bee572c8441847cab426dfca6618dd00~mv2.jpg" alt="Camiseta Eatbone" />
+      </div>
+    
+   
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Autor do Mês</h3>
+          <h2 class="descrição__titulo-livro">Comeosso</h2>
+          <p class="descrição__texto">Inspiração para a criação da empresa.
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="img/galodepenado.jpg" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Android</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Marketing Digital</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Camisetas</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Blusas</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Shorts</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Estampas</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+ 
+  
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+ 
+    <h2 class="rodapé__titulo"> Èo peggas </h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
